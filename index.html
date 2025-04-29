@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Virtual Salvador</title>
+    <link rel="stylesheet" href="SRC/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="home">
+      <h1>Descubra Salvador: Um Tour Cultural Virtual</h1>
+      <p>Publicado em: 24/04/2025</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#ponto1">Pelourinho</a>
+      <a href="#ponto2">Elevador Lacerda</a>
+      <a href="#ponto3">Igreja do Bonfim</a>
+      <a href="#ponto4">Farol da Barra</a>
+      <a href="#ponto5">Mercado Modelo</a>
+    </nav>
+
+    <section id="ponto1" class="card">
+      <img src="public/imgs/imagem-pelourinho.jpg" alt="Pelourinho" />
+      <div class="card-content">
+        <h2>Pelourinho</h2>
+        <p>Centro histórico de Salvador e Patrimônio Mundial da UNESCO.</p>
+        <button class="toggle-btn" onclick="toggleExtra('extra1', this)">
+          Ver Detalhes
+        </button>
+        <div class="extra-content" id="extra1">
+          <p>
+            O Pelourinho é o coração do centro histórico de Salvador. Com suas
+            ruas de paralelepípedos e casarões coloniais coloridos, abriga
+            museus, igrejas, espaços culturais e manifestações artísticas
+            populares. É um símbolo da resistência afro-brasileira e palco de
+            celebrações tradicionais como o Olodum e o Cortejo Afro.
+          </p>
+          <p>
+            <strong>Curiosidade:</strong>
+            O nome "Pelourinho" refere-se à antiga coluna de pedra onde eram
+            castigados escravizados durante o período colonial — hoje, símbolo
+            da resistência cultural negra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ponto2" class="card">
+      <img src="public/imgs/imagem-elevador.jpg" alt="Elevador Lacerda" />
+      <div class="card-content">
+        <h2>Elevador Lacerda</h2>
+        <p>
+          Um dos cartões-postais mais icônicos de Salvador, ligando a Cidade Alta
+          à Cidade Baixa.
+        </p>
+        <button class="toggle-btn" onclick="toggleExtra('extra2', this)">
+          Ver Detalhes
+        </button>
+        <div class="extra-content" id="extra2">
+          <p>
+            O Elevador Lacerda é uma estrutura monumental com mais de 70 metros de
+            altura, conectando o bairro do Comércio à Praça Tomé de Souza. Além de
+            sua funcionalidade no transporte público, oferece uma das vistas mais
+            incríveis da Baía de Todos os Santos, especialmente ao pôr do sol.
+          </p>
+          <p>
+            <strong>Curiosidade:</strong>
+            O Elevador Lacerda foi inaugurado em 1873 e, na época, era uma das
+            estruturas mais modernas do Brasil, sendo também um dos primeiros
+            elevadores urbanos do mundo.
+          </p>
+        </div>
+      </div>
+    </section>    
+
+    <section id="ponto3" class="card">
+      <img src="public/imgs/imagem-igreja.webp" alt="Igreja do Bonfim" />
+      <div class="card-content">
+        <h2>Igreja do Bonfim</h2>
+        <p>
+          Um dos templos religiosos mais tradicionais da Bahia, símbolo de fé e
+          sincretismo.
+        </p>
+        <button class="toggle-btn" onclick="toggleExtra('extra3', this)">
+          Ver Detalhes
+        </button>
+        <div class="extra-content" id="extra3">
+          <p>
+            Construída no século XVIII, a Igreja do Senhor do Bonfim é um
+            importante centro de peregrinação. A tradicional Lavagem do Bonfim,
+            realizada em janeiro, atrai milhares de fiéis e turistas em uma
+            celebração que mistura o catolicismo e as religiões de matriz africana,
+            com muita música, flores e fé.
+          </p>
+          <p>
+            <strong>Curiosidade:</strong>
+            As fitinhas coloridas amarradas na Igreja do Bonfim se tornaram um
+            símbolo de Salvador. Elas representam pedidos e agradecimentos de
+            devotos, e, quando se desfazem, acredita-se que os desejos sejam
+            realizados.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="ponto4" class="card">
+      <img src="public/imgs/imagem-farol.webp" alt="Farol da Barra" />
+      <div class="card-content">
+        <h2>Farol da Barra</h2>
+        <p>
+          Um dos pontos turísticos mais visitados de Salvador, símbolo da cidade
+          e da navegação brasileira.
+        </p>
+        <button class="toggle-btn" onclick="toggleExtra('extra4', this)">
+          Ver Detalhes
+        </button>
+        <div class="extra-content" id="extra4">
+          <p>
+            Localizado na ponta do bairro da Barra, o Farol da Barra abriga o
+            Museu Náutico da Bahia e oferece uma vista privilegiada do oceano
+            Atlântico. É um dos locais preferidos para assistir ao pôr do sol e
+            ponto de partida do tradicional Carnaval de Salvador. Sua história
+            remonta ao século XVII, sendo um dos mais antigos faróis das
+            Américas.
+          </p>
+          <p>
+            <strong>Curiosidade:</strong>
+            O Farol da Barra foi originalmente construído pelos portugueses em
+            1698 e, desde então, tem ajudado na navegação, sendo considerado um
+            dos maiores ícones da cidade.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="ponto5" class="card">
+      <img src="public/imgs/imagem-mercado.webp" alt="Mercado Modelo" />
+      <div class="card-content">
+        <h2>Mercado Modelo</h2>
+        <p>
+          Um dos maiores e mais tradicionais centros comerciais da Bahia,
+          localizado no centro de Salvador.
+        </p>
+        <button class="toggle-btn" onclick="toggleExtra('extra5', this)">
+          Ver Detalhes
+        </button>
+        <div class="extra-content" id="extra5">
+          <p>
+            O Mercado Modelo é um dos maiores centros de artesanato da cidade e
+            é um dos principais pontos turísticos de Salvador. Inaugurado no
+            século XIX, o mercado abriga diversas lojas de artesanato local, com
+            itens que vão desde lembranças e roupas típicas até produtos típicos
+            da culinária baiana.
+          </p>
+          <p>
+            <strong>Curiosidade:</strong>
+            Durante o período colonial, o Mercado Modelo foi utilizado como
+            armazém de escravizados e posteriormente como mercado público. Hoje,
+            é um ponto de encontro cultural e turístico, além de ser palco de
+            várias festas e eventos populares.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Entre em Contato</h2>
+      <form action="https://formsubmit.co/seu-email@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu Email" required>
+        <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+        <button type="submit" class="toggle-btn">Enviar</button>
+      </form>
+    </section>
+    
+    <div class="media-wrapper">
+      <section id="media" class="media card">
+        <h2>Destaques em Vídeo</h2>
+        <iframe
+          src="https://www.youtube.com/embed/21LP8nSl7kw?si=x9YaOgyG7HblSc-X"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="mapa" class="mapa card">
+        <h2>Localização de Salvador</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=Salvador%20BA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </div>
+
+    <footer>
+      <p>Projeto de Extensão - Análise e Desenvolvimento de Sistemas</p>
+      <p>Faculdade Anhanguera - Campus Parelela</p>
+      <p>Criado por Guilherme Andrade</p>
+      <p class="footer-icons">
+        <a href="https://www.instagram.com/guilherm_andrade01/" target="_blank"
+          ><i class="fab fa-instagram" title="Instagram"></i
+        ></a>
+        <a href="https://github.com/Guilherme150901" target="_blank"
+          ><i class="fab fa-github" title="Github"></i
+        ></a>
+      </p>
+      <p>Salvador-BA</p>
+    </footer>
+
+    <script src="SRC/script.js"></script>
+  </body>
+</html>
